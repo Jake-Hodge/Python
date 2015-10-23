@@ -21,15 +21,14 @@ for mark in marks:
 #all(isinstance(mark, float) for mark in marks)
 
     
-    
+# Function Example    
+"""    
 if(isTwoOne(mark,ball,window)):
     fsdafjsaflds
 
-
-
 def isTwoOne(alpha, beta, gamma)
     return (mark >=50) and (mark <60);
-
+"""
 
 
 
