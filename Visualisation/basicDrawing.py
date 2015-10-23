@@ -2,7 +2,7 @@ from graphics import *
 import random
 
 # Do some simple drawing
-window = GraphWin("Visualisation", 600, 600)
+window = GraphWin("Visualisation", 800, 800)
 
 # Read in and print out the data in the data file
 """with open("data.txt",'r') as x:
@@ -11,10 +11,14 @@ window = GraphWin("Visualisation", 600, 600)
     
 marks = [mark.rstrip('\n') for mark in open('data.txt')]
 for mark in marks:
-    #print "test" + marks[3]
     print mark
-    ball = Circle(Point(300,300), float(mark))
-    ball.setFill(color_rgb(255,255,0))
+    x = random.randint(100, 700)
+    y = random.randint(100, 700)
+    ball = Circle(Point(x,y), float(mark))
+    colour1 = random.randint(0,255)
+    colour2 = random.randint(0,255)
+    colour3 = random.randint(0,255)
+    ball.setFill(color_rgb(colour1,colour2,colour3))
     ball.draw(window)
     
     
