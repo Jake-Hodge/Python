@@ -27,9 +27,11 @@ from stop_words import get_stop_words
 
 stopWords = get_stop_words('english')
 """for word in stopWords:
-    print (word) """
+    print (word) """ # For testing
     
-
+    # Lists of positive, negative and greeting responses
+posWords = ['well', 'fine', 'good', 'alright', 'great', 'excellent', 'fantastic' ]
+negWords = ['bad', 'rubbish', 'poorly', 'unwell', 'dying', 'not']
 greetings = ['Hi', 'Hello', 'Howdy', 'Hola', 'Greetings', 'Hey', 'Yo']
 rand_greeting = random.choice(greetings)
 print rand_greeting
@@ -59,15 +61,25 @@ for word in nameArray:
     if word in stopWords:
         name = name.replace(" " + word + " "," ") # removes any words in the userinput string that matches stopwords
         print("removed: " + word)
-        #print (nameArray)
-        #name - word
         
+        
+name = name.title() #Capitalizes the first char of name 
+wellbeing = raw_input("Hello" + name + ", " + "How are you? >>> ").lower()  
+wellArray = wellbeing.split()
+for word in wellArray:
+    if word in stopWords:
+        wellbeing = wellbeing.replace(" " + word + " "," ")
+    if word in posWords:
+        print "Thats good to hear"
+    elif word in negWords:
+        print "Aw what a shame"
+    #else:
+     #   print "I don't know if thats good or bad :/"
 
-wellbeing = raw_input("Hello" + name + ", " + "How are you? >>> ")  
-
+""" If the ELSE is left in it will print out the string everytime it runs
+  through a word that isnt in the pos/neg list. Remove the stopwords first, then
+  the only words left should be the pos or neg word"""
  
- #stop_words run through the user input text and pick out the name
- #print out a 'Hello'etc + username
 
 
 
