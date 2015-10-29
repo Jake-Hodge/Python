@@ -22,7 +22,7 @@ for mark in marks:
     ball.draw(window)
     
     
-    xspeedvar = 3
+""" xspeedvar = 3
     yspeedvar = 3
     while True: #true is always true, loop 4eva
         currentPos = ball.getCenter()
@@ -31,7 +31,7 @@ for mark in marks:
         if(currentPos.getX() >= 800): xspeedvar = -xspeedvar
         if(currentPos.getX() <= 0): xspeedvar = -xspeedvar
         ball.move(xspeedvar, yspeedvar) #move by not move to    
-   
+   """
     # Waits until the mouse is clicked before closing the window
 window.getMouse()
 

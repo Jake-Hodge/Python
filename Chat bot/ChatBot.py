@@ -72,7 +72,7 @@ for word in wellArray:
     if word in posWords:
         print "Thats good to hear"
     elif word in negWords:
-        print "Aw what a shame"
+        print "Aw, what a shame"
     #else:
      #   print "I don't know if thats good or bad :/"
 
