@@ -22,6 +22,19 @@ for mark in marks:
     ball.draw(window)
     
     
+    xspeedvar = 3
+    yspeedvar = 3
+    while True: #true is always true, loop 4eva
+        currentPos = ball.getCenter()
+        if(currentPos.getY() >= 800): yspeedvar = -yspeedvar
+        if(currentPos.getY() <= 0): yspeedvar = -yspeedvar
+        if(currentPos.getX() >= 800): xspeedvar = -xspeedvar
+        if(currentPos.getX() <= 0): xspeedvar = -xspeedvar
+        ball.move(xspeedvar, yspeedvar) #move by not move to    
+   
+    # Waits until the mouse is clicked before closing the window
+window.getMouse()
+
 #all(isinstance(mark, float) for mark in marks)
 
     
@@ -55,5 +68,3 @@ line.draw(window)
 text = Text(Point(50,200),"Hello")
 text.draw(window)
 """
-# Waits until the mouse is clicked before closing the window
-window.getMouse()
