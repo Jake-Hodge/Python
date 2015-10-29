@@ -10,7 +10,7 @@ xspeedvar = 1
 yspeedvar = 1
     
 while True: #true is always true, loop 4eva
-        currentpos = ball.getCenter()
+        currentPos = ball.getCenter()
         
         if(currentPos.getY() >= 800): yspeedvar = -yspeedvar
         if(currentPos.getY() <= 0): yspeedvar = -yspeedvar
