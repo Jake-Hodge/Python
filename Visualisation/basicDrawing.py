@@ -49,13 +49,7 @@ def isTwoOne(alpha, beta, gamma)
 
 
 
-"""ball = Circle(Point(300,300), 300)
-ball.setFill(color_rgb(255,255,0))
-ball.draw(window)"""
-
 """
-ball2 = Circle(Point(200,500), 60)
-ball2.draw(window)
 
 box = Rectangle(Point(200,50),Point(250,150))
 box.setOutline(color_rgb(255,0,0))
